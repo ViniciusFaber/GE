@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'liga';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 55px 672px 35px;
+    grid-template-areas: 
+    'header header'
+    'article aside'
+    'footer footer';
+}
+
+.header{
+    background-color: #06aa48;
+    grid-column-end: span 2;
+    grid-area: 'header';
+    grid-row: header;
+    height: auto;
+}
+
+.list {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.list li{
+    display: inline-block;
+    color: #ffff;
+    margin-left: 25px;
+    font-size: 20px;
+    font-family: open sans,sans-serif;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -.5px;
+    text-decoration: none;
+    white-space: normal;
+}
+.list li a{
+    text-decoration: none;
+    color: #ffff;
+    opacity: .5;
+}
+
+.list li a:hover{
+    color:#ffff;
+    opacity: 1;
+}
+
+.article{
+    grid-area: 'article';
+    height: auto;
+}
+
+.article h2{
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.table{
+    margin-left: 5%;
+    font-size: 17px opensans;
+    font-weight: 500;
+    font-family: sans-serif;
+    width: 95%;
+    height: 85%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.table td{
+    border-top: 1px solid lightgray;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 10px;
+    text-align: center;
+}
+
+.table td:nth-child(1){
+    border-right: 1px solid #ada8a8;
+    text-align: left;
+}
+
+.table tr:nth-child(1){
+    color: #999999;
+    white-space: nowrap;
+    line-height: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    font-size: 11px;
+}
+
+.table th:nth-child(1){
+    text-align: left;
+    padding: 0 !important;
+    flex-grow: 2;
+    flex-basis: 50%;
+    margin-right: 15px;
+    border-right: 1px solid #ada8a8;
+}
+
+.sup{
+    color: #0000ff;
+    margin-right: 10px;
+}
+
+.med{
+    color: #00ffff;
+    margin-right: 10px;
+}
+
+.inf{
+    color: #008000;
+    margin-right: 10px;
+}
+
+.dez{
+    color: #008000;
+    margin-right: 3px;
+}
+
+.legenda{
+    margin-top: 2px;
+    margin-left: 5%;
+}
+
+.legenda li{
+    display: inline;
+    font-size: small;
+    margin-left: 1pc;
+}
+
+.legenda a{
+    text-decoration: none;
+    color: #06aa48;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.lib{
+    color: #0000ff;}
+
+.pre{
+    color: #00ffff;
+}
+
+.sul{
+    color: #008000;
+}
+
+.reb{
+    color: #ff0000;
+}
+
+.sub{
+    color: #51a81e;
+}
+
+.man{
+    color: #cccccc;
+}
+
+.aside{
+    grid-area: aside;
+    height: auto;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+.aside h2{
+    margin-left: 5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.top-games {
+    padding-top: 9px;
+    padding-bottom: 9.4px;
+    text-align: center;
+    display: grid;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    grid-template-columns: 20% 60% 20%;
+} 
+
+.top-games span{
+    color: #06aa48;
+    font-size: 16px;
+}
+
+.aside h3{
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.partidas {
+    text-align: center;
+    height: 88.5px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+}
+
+.infoTimes {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    text-align: center;
+}
+
+.arena{
+    font-size: 11px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.partidas div:nth-child(2){
+    text-align: center;
+}
+
+.time {
+    font-size: 18px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.rigth {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.logo{
+    padding-top: 4px;
+    width: 32px;
+}
+
+.logo-right {
+    float: right;
+    width: 32px;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.info{
+    height: 18.75px;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+.info a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #06aa48;
+}
+
+.center{
+    padding-top: 10px;
+    font-size: 21px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.center span{
+    color: lightgray;
+    font-family: Verdana;
+    font-size: 15px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.footer{
+    background-color: #06aa48;
+    color: #ffff;
+    grid-column-end: span 2;
+    grid-area: 'footer';
+    grid-row: footer;
+    height: auto;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.erro{
+    text-align: center;
+    margin-top: 20%;
+    font-size: xx-large;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.regulamento{
+    font-family: sans-serif;
+    padding: 19.5%;
+    background-color: #06aa48;
+}
+
+.regulamento h1,.regulamento div{
+    border: 2px solid black;
+}
+
+.regulamento h1{
+    text-align: center;
+    font-size: 21px;
+    background-color: #ffff;
+    padding-bottom: 5px;
+}
+
+.regulamento div{
+    font-size: 18px;
+    background-color: #ffff;
+}
